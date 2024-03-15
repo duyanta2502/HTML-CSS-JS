@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Sign Up - Sign In Form</title>
+</head>
+
+<body>
+    <!--    CODE    -->
+    <div class="wrapper">
+        <div class="title-box">
+            <div class="title signin">
+                Sign In
+            </div>
+            <div class="title signup">
+                Sign Up
+            </div>
+        </div>
+        <div class="container">
+            <div class="slide-box">
+                <input type="radio" name="slide" id="signin" checked>
+                <input type="radio" name="slide" id="signup">
+                <label for="signin" class="slide signin">Sign In</label>
+                <label for="signup" class="slide signup">Sign Up</label>
+                <div class="slider"></div>
+            </div>
+    <!--------------------------------SIGNIN FORM--------------------------->
+            <div class="form-box">
+                <form class="signin">
+                    <div class="input-group">
+                        <input type="text" placeholder="Username" required>
+                        <i class="fa-solid fa-user"></i>    <!-- icon -->
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Password" required>
+                        <i class="fa-solid fa-lock"></i>    <!-- icon -->
+                    </div>
+                    <div class="forgot">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <div class="btn">
+                        <input type="submit" value="Sign In">
+                    </div>
+                    <div class="signup-link">
+                        Don't have an accout ? <a href="#">Sign Up</a>
+                    </div>
+                </form>
+    <!--------------------------------SIGNUP FORM-------------------------------->
+                <form class="signup">
+                    <div class="input-group">
+                        <input type="text" placeholder="Username" required>
+                        <i class="fa-solid fa-user"></i>    <!-- icon user -->
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" placeholder="Email" required>
+                        <i class="fa-solid fa-envelope"></i>    <!-- icon -->
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" placeholder="Password" required>
+                        <i class="fa-solid fa-lock"></i>    <!-- icon -->
+                    </div>
+
+                    <div class="btn">
+                        <input type="submit" value="Sign Up">
+                    </div>
+                </form>
+    <!----------------------------------------------------------------------------->              
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

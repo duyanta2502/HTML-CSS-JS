@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("photo1.jpg") center/cover no-repeat;
+}
+
+.wrapper{
+    overflow: hidden;
+    max-width: 390px;   
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(25px);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 2);
+}
+
+.wrapper .title-box{
+    display: flex;
+    width: 200%;
+}
+
+.wrapper .title{
+    color: #fff;
+    width: 50%;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+
+.container .slide-box{
+    height: 50px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 30px 0 10px 0;
+    border: 2px solid rgba(255, 255, 255, 0.459);
+}
+
+.slide-box .slide{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.6s ease;
+}
+
+.slide-box .slider{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 0;
+    background: rgba(255, 255, 255, 0.25);
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+#signup:checked ~.slider{
+    left: 50%;
+}
+
+#signup:checked~label.signup{
+    color: #fff;
+    cursor: default;
+    user-select: none;
+} 
+
+#signin:checked~label.signin{
+    cursor: default;
+    user-select: none;
+}
+
+.wrapper .container{
+    width: 100%;
+    overflow: hidden;
+}
+
+.container .form-box{
+    display: flex;
+    width: 200%;
+}
+
+.container .form-box form{
+    width: 50%;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-box form .input-group{
+    height:  50px;
+    width: 100%;
+    margin-top: 15px;
+    position: relative;
+}
+
+.form-box form .input-group input{
+    height:  100%;
+    width: 100%;
+    outline: none;
+    padding: 0 40px 0 10px;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.459);
+    font-size: 16px;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+form .input-group input::placeholder{
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+form .input-group input:focus::placeholder{
+    color: rgba(255, 255, 255, 0.65);
+}
+
+form .input-group i{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.form-box form .forgot{
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.form-box form .signup-link{
+    text-align: center;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.form-box form .forgot a, .form-box form .signup-link a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.form-box form .forgot a:hover, .form-box form .signup-link a:hover{
+    text-decoration: underline;
+}
+
+.form .btn{
+    height:  50px;
+    width:  100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 15px;
+}       
+
+form .btn input[type = "submit"]{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    background:rgba(255, 255, 255, 0.35);
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form .btn input[type = "submit"]:hover{
+    background: rgba(255, 255, 255, 0.25);
+}
