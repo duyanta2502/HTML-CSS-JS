@@ -20,6 +20,5 @@ addClickEvent(signinBtn, () => {
 });
 
 addClickEvent(signupLink, () => {
-    signupBtn.click(); // Kích hoạt sự kiện click của nút đăng ký
-    return false;
+    signupBtn.click(); 
 });
